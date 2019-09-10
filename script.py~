@@ -18,24 +18,24 @@ try:
     while 1:
         if (hpma115S0.readParticleMeasurement()):
             data = {
-                    "metric": "clome_2_5_Dust.ug",
+                    "metric": "sonnonet.2_5_Dust.ug",
                     "timestamp":time.time(),
                     "value":hpma115S0._pm2_5,
                     "tags": {
                         "id" : "1",
                         "sensor" : "Honeywell_DustSensor",
-                        "building" : "COEX",
+                        "building" : "SONNONET",
                         "city" : "BUCHEON"
                         }
                     }
             data1 = {
-                    "metric": "clome_.10_Dust.ug",
+                    "metric": "sonnonet.10_Dust.ug",
                     "timestamp":time.time(),
                     "value":hpma115S0._pm10,
                     "tags": {
                         "id" : "2",
                         "sensor" : "Honeywell_DustSensor",
-                        "building" : "COEX",
+                        "building" : "SONNONTE",
                         "city" : "BUCHEON"
                         }
                     }
